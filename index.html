@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="./favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEXT CLEaner</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+
 <section>
     <h2>Tinish belgilarni olib tashlash</h2>
 
@@ -15,12 +16,20 @@
 
   <div class="tugmalar">
     <button id="tozalash">Tozalash</button>
+    <button id="tanlangan">Tanlanganlarni o'chirish</button>
     <button id="nusxa">Nusxa olish</button>
     <button id="ochirish">Matnni o'chirish</button>
   </div>
-</section>
 
-  
+  <fieldset id="belgilar">
+    <legend>O'chiriladigan belgilar</legend>
+    <div id="belgilarRoyxati"></div>
+    <div class="belgi-tugmalar">
+      <button type="button" id="hammasi">Hammasini belgilash</button>
+      <button type="button" id="hechbiri">Belgilarni olib tashlash</button>
+    </div>
+  </fieldset>
+</section>
 
     <script src="./index.js"></script>
 </body>

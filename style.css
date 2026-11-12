@@ -2,8 +2,56 @@ body {
   max-width: 600px;
   margin: 40px auto;
   padding: 0 16px;
+
+}
+:root {
+  --fon-1: #5745a6;
+  --fon-2: #b66d96;
+  --fon-3: #916a37;
+  --asosiy: #7c3aed;
+  --sarlavha: #5b21b6;
+  --matn-rangi: #1f2937;
 }
 
+body {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 16px;
+  
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 40px 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--matn-rangi);
+  background: linear-gradient(135deg, var(--fon-1) 0%, var(--fon-2) 50%, var(--fon-3) 100%);
+  background-attachment: fixed;
+}
+
+section {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 28px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.15);
+}
+
+h2 {
+  margin-top: 0;
+  color: var(--sarlavha);
+}
+
+textarea {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: var(--asosiy);
+  box-shadow: 0 0 0 4px #ddd6fe;
+}
 textarea {
   width: 100%;
   height: 500px;
@@ -31,7 +79,12 @@ button {
   color: white;
   transition: background-color 0.2s;
 }
-
+#hammasi{
+background:lightsalmon;
+}
+#hechbiri{
+background: lightsalmon;
+}
 #tozalash {
   background-color: #2563eb;
 }
@@ -54,4 +107,45 @@ button {
 
 #ochirish:hover {
   background-color: #b91c1c;
+}
+#tanlangan{
+  background: rgb(46, 46, 15);
+ 
+}
+
+#tanlangan:hover{
+  background: rgb(68, 68, 19);
+}
+.chip {
+  background-color: #ffffff;
+  color: #374151;
+  border: 2px solid #d1d5db;
+  padding: 6px 12px;
+  font-size: 15px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.chip:hover {
+  border-color: #7c3aed;
+}
+
+.chip[aria-pressed="true"] {
+  background-color: #7c3aed;
+  border-color: #7c3aed;
+  color: #ffffff;
+}
+
+.chip[aria-pressed="true"]::before {
+  content: "";
+}
+
+.chip[aria-pressed="true"]:hover {
+  background-color: #6d28d9;
+}
+
+.chip:focus-visible {
+  outline: 3px solid #c4b5fd;
+  outline-offset: 2px;
 }
